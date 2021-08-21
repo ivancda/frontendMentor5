@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body{
+  background-image: url(images/bg-stars.svg);
+  background-color: hsl(256, 15%, 14%);
+  background-size: contain;
+  font-size: 14px; 
+}
+section{
+  background-image:url(images/pattern-hills.svg);
+  background-size: 260% 30%;
+  background-repeat: no-repeat;
+  background-position: 90% 100% ;
+  font-family: 'Red Hat Text', sans-serif;
+  letter-spacing: 5px;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.centerBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.centerBox h1{
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 3em;
+  margin-top: 8em;
+  width: 20rem;
+}
+.hourBox{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: hsl(345, 95%, 68%);
+  align-items: center;
+}
+.attribution{
+  font-size: .8em;
+  text-align: center;
+}
+.attribution a{
+  color: white;
+}
+.rotor-group-heading{
+  margin-top: 80px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.iconBox{
+  display: flex;
+  gap: 2em;
+}
+.iconBox img{
+  cursor: pointer;
+}
+.iconBox img:hover{
+  filter: brightness(3)
+}
+
+
+
+@media (min-width: 550px){
+  section{
+    background-size: 100% ;
+  }
+  .rotor-group-heading{
+    margin-top: 150px;
+  }
+  .centerBox h1{
+    font-size: 1.5em;
+    width: auto;
+    margin-bottom: 5em;
+    margin-top: 6em;
+  }
+  footer{
+    gap: 4em;
+  }
+  .iconBox{
+    gap: 2.3em;
+  }
+}
